@@ -1,4 +1,4 @@
-<?php include 'headerkai.php';
+<?php include 'headerEmployee.php';
 include 'db.php';
 session_start(); 
 // SQL query for Department Name
@@ -47,6 +47,6 @@ if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
 </main>
 <br>
 <?php
- include 'footerkai.php'; 
+ include 'footer.php'; 
 }
 ?>
