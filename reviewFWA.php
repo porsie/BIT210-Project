@@ -11,7 +11,7 @@ if (isset($_POST['submitForm']))
     $fwaReason = filter_input(INPUT_POST,'fwaReason',FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $sql = "INSERT INTO FWA (workType, fwaDescription, fwaReason) 
         VALUES ('$workType', '$pw', '$fwaDescription', '$fwaReason')";
-
+        
     if (mysqli_query($db, $sql)) {
         // success
         header('Location: HRAdminDashBoard.php');
@@ -25,7 +25,7 @@ if (isset($_POST['submitForm']))
 <main>
     <hr>
     <div id="EmployeeForm">
-        <h3>Submit FWA Request</h3>
+        <h3>Review FWA Request</h3>
         <hr>
         <form id="empForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
             <fieldset class="border p-2">
