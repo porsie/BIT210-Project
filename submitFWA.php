@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'employee_header.php';
 include 'db.php';
 ?>
 
@@ -14,7 +14,7 @@ if (isset($_POST['submitForm']))
 
     if (mysqli_query($db, $sql)) {
         // success
-        header('Location: HRAdminDashBoard.php');
+        header('Location: employeeDashboard.php');
     } else {
         // error
         echo 'Error: ' . mysqli_error($db);

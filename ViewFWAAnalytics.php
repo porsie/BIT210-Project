@@ -25,7 +25,7 @@ if (isset($_POST['submitForm']))
 <main>
     <hr>
     <div id="EmployeeForm">
-        <h3>Review FWA Request</h3>
+        <h3>View  FWA Analytics</h3>
         <hr>
         <form id="empForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
             <fieldset class="border p-2">

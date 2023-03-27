@@ -16,8 +16,7 @@ if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
 
     <button type="button" class="btn btn-success">Edit Profile</button>
 
-    <a href="##">Register New Employee</a>
-    <a href="reviewFWA.php">Review FWA Analytics</a>
+
 
         
 </main>

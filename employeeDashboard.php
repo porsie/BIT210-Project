@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'employee_header.php';
 include 'db.php';
 session_start(); 
 
@@ -16,8 +16,7 @@ if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
 
     <button type="button" class="btn btn-success">Edit Profile</button>
 
-    <a href="submitFWA.php">Submit FWA Request</a>
-    <a href="#">Submit Daily Schedule</a>
+    
 
         
 </main>

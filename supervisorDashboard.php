@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'supervisor_header.php';
 include 'db.php';
 session_start(); 
 
