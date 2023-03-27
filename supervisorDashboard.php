@@ -16,6 +16,10 @@ if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
 
     <button type="button" class="btn btn-success">Edit Profile</button>
 
+    <a href="ViewFWAAnalytics.php">View FWA Analytics</a>
+    <a href="ReviewFWARequest.php">Review FWA Request</a>
+    <a href="#">Review Employee Schedule</a>
+
         
 </main>
 <br>
