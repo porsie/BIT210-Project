@@ -30,13 +30,11 @@ include 'db.php';
                 </div>
                 
                
-                <input type="submit" name="submitForm" class="btn btn-success" id="submit">
+                <input type="submit" name="submitForm" class="btn btn-success" id="submit" value="Check">
             </fieldset>
         </form>
 
-        <div class="fav">
-            
-        </div>
+
     </div>
 </main>
 <br>

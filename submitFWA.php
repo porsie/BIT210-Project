@@ -5,6 +5,7 @@ $randomID = 'S' . str_pad(mt_rand(1, 999), 3, '0', STR_PAD_LEFT);
 $employeeid = $_SESSION['employeeID'];
 $selectRequest ="select * from request where requestID = '$randomID' ";
 $array = mysqli_query($db, $selectRequest);
+
 ?>
 
 <?php
@@ -14,7 +15,7 @@ if (isset($_POST['submitForm']))
     date_default_timezone_set('Asia/Kuala_Lumpur');
     $localDate = date ('d-m-y');
 
-    $convertedDate =date ('Y-m-d', strtotime($localDate)); 
+    $convertedDate =date ('d-m-y', strtotime($localDate)); 
 
 
 
