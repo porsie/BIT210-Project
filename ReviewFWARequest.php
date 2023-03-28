@@ -44,33 +44,15 @@ include 'db.php';
               <td> <a href = 'employeeFWAinfo.php?ID=$printTable[employeeID]&sid=$printTable[requestID]'>$printTable[employeeID]</td>
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
-
-
-      
-
-              
-     
               </tr>
-
-
-              
-              
-        
               
               ";
 
               }
 
-              
-              
-              
-
-
-            
             
             ?>
 
-            
 
         </table>
     </div>
