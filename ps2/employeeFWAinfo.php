@@ -9,7 +9,13 @@ include 'db.php';
 
 <main>
     <hr>
-    <div id="EmployeeForm">
+    <?php
+$empID = $_GET['ID'];
+$sid = $_GET['sid'];
+    echo"
+    <form method='POST' action='updateStatus.php?id=$empID&sid=$sid'>
+    ";
+    ?>
         <h3>Review FWA Request</h3>
         <hr>
         
@@ -25,13 +31,18 @@ include 'db.php';
 
             <?php
 
+
+
               $data = "select * from request 
               
               inner join employee 
               
               on request.employeeID = employee.employeeID 
               
-              where FWAstatus = 'Pending' ";
+              WHERE request.requestID='$sid' 
+
+              AND request.employeeID='$empID'
+                 ";
 
               $fwaStatus = mysqli_query($db, $data);
 
@@ -41,15 +52,18 @@ include 'db.php';
               
                 <tr>
               <td> $printTable[name]</td>
-              <td> <a href = 'employeeFWAinfo.php?ID=$printTable[employeeID]&sid=$printTable[requestID]'>$printTable[employeeID]</td>
+              <td> $printTable[employeeID]</td>
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
 
 
-      
-
+              <td>
+                    <select class='form-select' name='FWAstatus' id='FWAstatus'>
+                        <option selected value='Accept'>Accept</option>
+                        <option value='Reject'> Reject </option>
+                    </select>
               
-     
+              </td>
               </tr>
 
 
@@ -60,9 +74,8 @@ include 'db.php';
               ";
 
               }
-    
 
-
+                   
             
             
             ?>
@@ -70,7 +83,9 @@ include 'db.php';
             
 
         </table>
-    </div>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>         
 </main>
 <br>
 <?php include 'footer.php'; ?>

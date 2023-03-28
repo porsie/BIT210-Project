@@ -10,8 +10,8 @@ include 'db.php';
 <main>
     <hr>
     <?php
-                    $empID = $_GET['ID'];
-                    $sid = $_GET['sid'];
+$empID = $_GET['ID'];
+$sid = $_GET['sid'];
     echo"
     <form method='POST' action='updateStatus.php?id=$empID&sid=$sid'>
     ";
@@ -27,8 +27,8 @@ include 'db.php';
                 <th>Employee ID</th>
                 <th>Request ID</th>
                 <th>Status</th>
-                <th>Actions</th>
-                <th>Comments</th>
+                <th>Action</th>
+                <th>Comment</th>
             </thead>
 
             <?php
@@ -44,7 +44,8 @@ include 'db.php';
               WHERE request.requestID='$sid' 
 
               AND request.employeeID='$empID'
-                 ";
+              
+              ";
 
               $fwaStatus = mysqli_query($db, $data);
 
@@ -57,6 +58,7 @@ include 'db.php';
               <td> $printTable[employeeID]</td>
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
+              
               <td>
                     <select class='form-select' name='FWAstatus' id='FWAstatus'>
                         <option selected value='Accept'>Accept</option>
@@ -64,16 +66,21 @@ include 'db.php';
                     </select>
               
               </td>
-              <td><input type = 'text' name = 'Comment'></td>
+              <td><input type ='text'  name='comment' id='comment'></td>
               </tr>
+              
 
               
               ";
 
               }
 
+                   
+            
+            
             ?>
 
+            
 
         </table>
 
