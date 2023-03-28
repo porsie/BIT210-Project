@@ -45,14 +45,23 @@ include 'db.php';
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
               </tr>
+
+
+              
+
               
               ";
 
               }
 
+              
+
+
+            
             
             ?>
 
+            
 
         </table>
     </div>

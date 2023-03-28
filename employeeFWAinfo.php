@@ -27,6 +27,8 @@ include 'db.php';
                 <th>Employee ID</th>
                 <th>Request ID</th>
                 <th>Status</th>
+                <th>Actions</th>
+                <th>Comments</th>
             </thead>
 
             <?php
@@ -55,8 +57,6 @@ include 'db.php';
               <td> $printTable[employeeID]</td>
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
-
-
               <td>
                     <select class='form-select' name='FWAstatus' id='FWAstatus'>
                         <option selected value='Accept'>Accept</option>
@@ -64,6 +64,7 @@ include 'db.php';
                     </select>
               
               </td>
+              <td><input type = 'text' name = 'Comment'></td>
               </tr>
 
               
