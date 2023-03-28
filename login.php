@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>LOGIN</title>
-	<link rel="stylesheet" type="text/css" href="PorSie.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
      <form action="logindb.php" method="post">
