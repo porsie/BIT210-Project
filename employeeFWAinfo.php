@@ -66,21 +66,13 @@ include 'db.php';
               </td>
               </tr>
 
-
-              
-              
-        
               
               ";
 
               }
 
-                   
-            
-            
             ?>
 
-            
 
         </table>
 
