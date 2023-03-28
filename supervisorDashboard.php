@@ -2,6 +2,33 @@
 include 'db.php';
 session_start(); 
 
+$sql = "SELECT department.deptName
+        FROM department
+        JOIN employee ON department.deptID = employee.deptID
+        WHERE department.deptID = employee.deptID
+        AND employee.employeeID = '$_SESSION[employeeID]'";
+
+// Execute query
+$result = $db->query($sql);
+
+// Get result
+$row = $result->fetch_assoc();
+$departmentName = $row['deptName'];
+
+// SQL QUERY FOR EMAIL
+$sqlEmail = "SELECT email
+        FROM employee
+        WHERE employeeID = '$_SESSION[employeeID]'";
+// Execute query
+$result = $db->query($sqlEmail);
+
+// Get result
+$row = $result->fetch_assoc();
+$email = $row['email'];
+
+
+
+// Print department name
 if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
     ?>
 
@@ -12,13 +39,10 @@ if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
     <label for="name"> <?php echo "Supervisor Name : $_SESSION[name] ";?> </label><br><br><br>
     <label for="empID"><?php echo "Supervisor ID : $_SESSION[employeeID] ";?> </label><br><br><br>
     <label for="position">Position: Supervisor</label><br><br><br>
-    <label for="email">Email: HRAdmin@gmail.com </label><br><br><br> // email need retrieve from database
+    <label for="email"><?php echo "Email: " . $email;?> </label><br><br><br> 
 
     <button type="button" class="btn btn-success">Edit Profile</button>
 
-    <a href="ViewFWAAnalytics.php">View FWA Analytics</a>
-    <a href="ReviewFWARequest.php">Review FWA Request</a>
-    <a href="#">Review Employee Schedule</a>
 
         
 </main>
