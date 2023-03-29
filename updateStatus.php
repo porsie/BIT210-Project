@@ -9,6 +9,7 @@ if(isset($_POST['submit']))
     $result = mysqli_query($db,$sql);
     echo $sql;
 
+
     
     
 
