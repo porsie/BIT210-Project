@@ -105,7 +105,17 @@ form {
 
 .fwa{
 
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.container{
+
     width: 160px;
     height: 160px;
     background: red;
+    display: inline-block;
 }
