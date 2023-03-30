@@ -1,5 +1,6 @@
-<?php include 'header.php';
+<?php include 'hradmin_header.php';
 include 'db.php';
+session_start();
 
 
 ?>
@@ -28,12 +29,12 @@ include 'db.php';
             <?php
 
               $data = "select * from request 
+              inner join employee on request.employeeID = employee.employeeID 
+              inner join department on department.deptID = employee.deptID 
+              where FWAstatus = 'Pending' and employee.SupervisorID = '$_SESSION[employeeID]'";
+
+
               
-              inner join employee 
-              
-              on request.employeeID = employee.employeeID 
-              
-              where FWAstatus = 'Pending' ";
 
               $fwaStatus = mysqli_query($db, $data);
 
