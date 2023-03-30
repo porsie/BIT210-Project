@@ -36,6 +36,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             elseif ($row['employeeID'] === $uname && $row['password'] === $pass) {
             	$_SESSION['employeeID'] = $row['employeeID'];
             	$_SESSION['name'] = $row['name'];
+				$_SESSION['deptID'] = $row['deptID'];
 				if(substr($_SESSION['employeeID'],0,1)=="S"){
 					echo "<script>window.location.href='supervisorDashboard.php?id={$_SESSION['employeeID']}'</script>";
 

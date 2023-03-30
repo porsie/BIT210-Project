@@ -79,7 +79,7 @@ if (isset($_POST['submitForm']))
                 </div>
                 
                
-                <input type="submit" name="submitForm" class="btn btn-success" id="submit">
+                <input type="submit" name="submitForm" class="btn btn-success" id="submit" onclick="myFunction()">
             </fieldset>
         </form>
     </div>

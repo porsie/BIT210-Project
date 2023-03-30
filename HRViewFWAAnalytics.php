@@ -1,8 +1,9 @@
-<?php include 'header.php';
+<?php include 'hradmin_header.php';
 include 'db.php';
 session_start();
 
 $sql = "select * from department";
+
 
 
 $fwh = "select count(request.employeeID) as total from request
@@ -30,6 +31,7 @@ $dailySchedule = "select employeeID, date, workLocation, workHours from dailySch
 $ds = mysqli_query($db, $dailySchedule);
 
 $result = mysqli_query($db, $sql);
+
 
 
 if(isset($_GET['submit']))
@@ -61,7 +63,7 @@ if(isset($_GET['submit']))
         <hr>
 
 
-    <form method="GET" action="ViewFWAAnalytics.php">
+    <form method="GET" action="HRViewFWAAnalytics.php">
     <div class="form-group input-control">
                     <label for="status">Please select the department: </label>
                     <select class="form-select" name="deptID" id="deptID">
@@ -82,6 +84,7 @@ if(isset($_GET['submit']))
                 
                
                 <input type="submit" name="submit" class="btn btn-success" id="submit" value="Check">
+                <br><br>
 
 
     </div>
@@ -151,6 +154,8 @@ if(isset($_GET['submit']))
     </table>
 
     <table class="table">
+
+    <h3>Employee Daily Schedule</h3>
         <thead>
             <th>Employee ID</th>
             <th>Work Location</th>

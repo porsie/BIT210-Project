@@ -33,4 +33,6 @@
                 </div>
                 <div class="col-md-7 bg-light">
 
+                <script src="flexIS.js"></script>
+
                 
