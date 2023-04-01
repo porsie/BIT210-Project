@@ -3,11 +3,6 @@ include 'db.php';
 session_start();
 
 
-
-
-
-
-
 $fwh = "select count(request.employeeID) as total from request
 inner join employee on employee.employeeID = request.employeeID
 inner join department on department.deptID = employee.deptID where request.FWAstatus = 'Accept' and request.workType = 'Flexible Work Hour' 
