@@ -5,10 +5,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FlexIS | FWA Arrangement System </title>
-
+        <title>FlexEZ | Register Employee </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
         <link rel="stylesheet" href="PorSie.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
@@ -26,8 +28,8 @@
                     <nav>
                         <div class="row row-cols-5 row-cols-md-1">
                             <div class="col py-3 text-center text-md-left">Menu</div>
-                            <div class="col py-3 text-center text-md-left"><a href="RegisterEmployee.php">Register Employee</a></div>
-                            <div class="col py-3 text-center text-md-left"><a href="">View FWA Analytics</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="Submit.php">Submit FWA Request</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="UpdateDailySchedule.php">Update Daily Schedule</a></div>
                             <div class="col py-3 text-center text-md-left"><a href="logout.php">Logout</a></div>
                         </div>
                     </nav>
