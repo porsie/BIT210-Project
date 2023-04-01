@@ -26,7 +26,8 @@
                         <div class="row row-cols-5 row-cols-md-1">
                             <div class="col py-3 text-center text-md-left">Menu</div>
                             <div class="col py-3 text-center text-md-left"><a href="ReviewEmployeeSchedule.php">Review Employee Schedule</a></div>
-                            <div class="col py-3 text-center text-md-left"><a href="">View FWA Analytics</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="SupervisorViewFWAAnalytics.php">View FWA Analytics</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="ReviewFWARequest.php">Review FWA Request</a></div>
                             <div class="col py-3 text-center text-md-left"><a href="logout.php">Logout</a></div>
                         </div>
                     </nav>
