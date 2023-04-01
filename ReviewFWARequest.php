@@ -1,4 +1,4 @@
-<?php include 'hradmin_header.php';
+<?php include 'headerSupervisor.php';
 include 'db.php';
 session_start();
 
@@ -31,7 +31,7 @@ session_start();
               $data = "select * from request 
               inner join employee on request.employeeID = employee.employeeID 
               inner join department on department.deptID = employee.deptID 
-              where FWAstatus = 'Pending' and employee.SupervisorID = '$_SESSION[employeeID]'";
+              where request.FWAstatus = 'Pending' and employee.SupervisorID = '$_SESSION[employeeID]'";
 
 
               
