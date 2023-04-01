@@ -3,7 +3,6 @@ include 'db.php';
 ?>
 
 <?php
-// Form submit
 
 ?>
 
@@ -35,9 +34,7 @@ $sid = $_GET['sid'];
 
 
 
-              $data = "select * from request 
-              
-              inner join employee 
+              $data = "select * from request inner join employee 
               
               on request.employeeID = employee.employeeID 
               
