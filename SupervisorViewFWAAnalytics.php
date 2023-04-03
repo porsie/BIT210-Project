@@ -58,11 +58,6 @@ if(isset($_GET['submit']))
     $dailySchedule.=" AND date = '$date'";
     $ds=mysqli_query($db,$dailySchedule);
 
-    
-    
-    
-
-
 }
 ?>
 
