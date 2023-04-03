@@ -1,4 +1,4 @@
-<?php include 'headerEmployee.php';
+<?php include 'headerSupervisor.php';
 include 'db.php';
 ?>
 
