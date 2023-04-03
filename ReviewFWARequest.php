@@ -33,9 +33,6 @@ session_start();
               inner join department on department.deptID = employee.deptID 
               where FWAstatus = 'Pending' and employee.SupervisorID = '$_SESSION[employeeID]'";
 
-
-              
-
               $fwaStatus = mysqli_query($db, $data);
 
               while($printTable = mysqli_fetch_assoc($fwaStatus)){
@@ -47,33 +44,13 @@ session_start();
               <td> <a href = 'employeeFWAinfo.php?ID=$printTable[employeeID]&sid=$printTable[requestID]'>$printTable[employeeID]</td>
               <td> $printTable[requestID]</td>
               <td> $printTable[FWAstatus]</td>
-
-
-      
-
-              
      
               </tr>
-
-
-              
-              
-        
-              
+             
               ";
 
               }
-
-              
-              
-              
-
-
-            
-            
             ?>
-
-            
 
         </table>
     </div>

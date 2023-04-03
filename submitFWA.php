@@ -17,35 +17,21 @@ if (isset($_POST['submitForm']))
 
     $convertedDate =date ('d-m-y', strtotime($localDate)); 
 
-
-
     $workType = $_POST["workType"];
     $fwaDescription = $_POST["description"];
     $reason = $_POST["reason"];
 
     if(mysqli_num_rows($array)>0){
-
         $randomID = 'S' . str_pad(mt_rand(1, 999), 3, '0', STR_PAD_LEFT);
         
-
     }
-
-    
 
     $sql = "insert into request(requestID, employeeID,requestDate, workType, fwa_description, reason, FWAstatus) 
         values ('$randomID', '$employeeid', '$convertedDate', '$workType', '$fwaDescription' , '$reason', 'Pending')";
 
     $result = mysqli_query($db, $sql);
-
     header('location: employeeHome.php');
-
-    
-
-    
-
-    
-
-    
+ 
 }
 
 ?>
