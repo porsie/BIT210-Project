@@ -1,7 +1,7 @@
-
-<?php include 'headerSupervisor.php';
+<?php include 'headerEmployee.php';
 include 'db.php';
 session_start(); 
+// SQL query for Department Name
 $sql = "SELECT department.deptName
         FROM department
         JOIN employee ON department.deptID = employee.deptID
@@ -27,21 +27,21 @@ $row = $result->fetch_assoc();
 $email = $row['email'];
 
 
+
+// Print department name
 if (isset($_SESSION['employeeID']) && isset($_SESSION['name'])) {
     ?>
 
 
 <main>
     <hr>
-    <h3>Welcome to the Supervisor Dashboard</h3>
-    <label for="name"> <?php echo "Supervisor Name : $_SESSION[name] ";?> </label><br><br><br>
-    <label for="empID"><?php echo "Supervisor ID : $_SESSION[employeeID] ";?> </label><br><br><br>
-    <label for="position">Position: Supervisor</label><br><br><br>
-    <label for="email"><?php echo "Email: " . $email;?> </label><br><br><br> 
+    <h3>Welcome to the Employee Dashboard</h3>
+    <label for="name"> <?php echo "Employee Name : $_SESSION[name] ";?> </label><br><br><br>
+    <label for="empID"><?php echo "Employee ID : $_SESSION[employeeID] ";?> </label><br><br><br>
+    <label for="position"><?php echo "Department name: " . $departmentName;?></label><br><br><br>
+    <label for="email"><?php echo "Email: " . $email;?> </label><br><br><br>
 
     <button type="button" class="btn btn-success">Edit Profile</button>
-
-
 
         
 </main>
