@@ -32,7 +32,7 @@ if (isset($_POST['submitForm']))
 
     
 
-    $sql = "insert into request(requestID, employeeID,requestDate, workType, fwa_description, reason, FWAstatus) 
+    $sql = "insert into request(requestID, employeeID,requestDate, workType, description, reason, FWAstatus) 
         values ('$randomID', '$employeeid', '$convertedDate', '$workType', '$fwaDescription' , '$reason', 'Pending')";
 
     $result = mysqli_query($db, $sql);
