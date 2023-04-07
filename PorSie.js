@@ -14,9 +14,7 @@ var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 var employeeList=[];
 
-function myFunction(){
-    alert ("Thank You for yr FWA submission! Have a nice day ");
-}
+
 
 eForm.addEventListener('submit', (event) => {
     validateEmployeeForm();
