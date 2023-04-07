@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FlexIS | Register Employee </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="PorSie.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="logoBanner">
+            <img src="img/logo.jpg" alt="FlexIS">
+        </div>
+        <div class="colorDiv"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 bg-secondary sticky-top">
+                    <nav>
+                        <div class="row row-cols-5 row-cols-md-1">
+                            <div class="col py-3 text-center text-md-left">Menu</div>
+                            <div class="col py-3 text-center text-md-left"><a href="review request.html">Review FWA Request</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="review employee schedule.html">Review Employee Schedule</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="supervisor fwa analytics.html">View FWA Analytics</a></div>
+                            <div class="col py-3 text-center text-md-left"><a href="">Logout</a></div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-7 bg-light">
+                    
+                    <main>
+                        <hr>
+                        <div id="EmployeeForm">
+                            <h3>View  FWA Analytics</h3>
+                            <hr>
+                    
+                    
+                        <form method="GET" action="SupervisorViewFWAAnalytics.php?">
+                        <div class="form-group input-control">
+                                        <label for="departmentID" >Department: D001
+                                          
+                                            
+                                            
+                                        </label>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group input-control">
+                                        <label for="date">Please select a date: </label>
+                                        <input type="date" name="date" id="date">
+                                        <p>Error message</p>
+                                    </div>
+                                    
+                                   
+                                    <input type="submit" name="submit" class="btn btn-success" id="submit" value="Check">
+                                    <br><br>
+                    
+                    
+                        </div>
+                    
+                        <table class="table">
+                    
+                        <thead>
+                            <th>Flexible Working Hours</th>
+                            <th>Work From Home</th>
+                            <th>Hybrid</th>
+                        </thead>
+                    
+                            <tr>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        
+                    
+                    
+                     
+                    
+                    
+                    
+                        <form>
+                    
+                    
+                    
+                        </table>
+                    
+                        <table class="table">
+                    
+                        <h3>Employee Daily Schedule</h3>
+                            <thead>
+                                <th>Employee ID</th>
+                                <th>Work Location</th>
+                                <th>Work Hours</th>
+                        </thead>
+                    
+                        
+                        
+                    
+                            <tr>
+                            
+                            <td>E002</td>
+                            <td>bandar Utama</td>
+                            <td>5</td>
+                            
+                            
+                            
+                            
+                            </tr>
+                            
+             
+                        </table>
+                        </form>
+                    
+                    </main>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <small><i>Copyright &copy; 2023 HELP University</i></small>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+         <script src="PorSie.js"></script>
+    </body>
+</html>
